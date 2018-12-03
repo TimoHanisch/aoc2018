@@ -6,7 +6,7 @@ fun main(args: Array<String>) {
     val resource = ClassLoader.getSystemClassLoader().getResource("input/input3")
     val size = 1000
     val fabric = Array(size) { IntArray(size) }
-    var idSet = mutableSetOf<Int>()
+    val idSet = mutableSetOf<Int>()
     File(resource.toURI())
         .useLines { it.toList() }
         .forEach { line ->
